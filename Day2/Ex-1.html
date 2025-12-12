@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Bài 1
+    let challenge = "30 Days Of JavaScript";
+    // Bài 2
+    console.log(challenge);
+    // Bài 3
+    console.log(challenge.length);
+    // Bài 4
+    console.log(challenge.toUpperCase()); // In hoa
+    // Bài 5
+    console.log(challenge.toLowerCase()); // viết thường
+    // Bài 6
+    console.log(challenge.substring(0, 2)); // lấy từ start đên trước end
+    console.log(challenge.substr(0, 4)); // 0: vị trí bắt đầu; 4: số kí tự muốn lấy
+
+    // Bài 7
+    console.log(challenge.substring(3));
+    console.log(challenge.substr(3, 18));
+
+    // Bài 8
+    console.log(challenge.includes("Script"));
+    
+    // Bài 9
+    console.log(challenge.split(" "));
+
+    // Bài 10
+    console.log(challenge.split());
+
+    // Bài 11
+    let companies = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon';
+    console.log(companies.split(", "));
+
+    // Bài 12 
+    console.log(challenge.replace("JavaScript", "Python"));
+
+    // Bài 13
+    console.log(challenge.charAt(15));
+
+    // Bài 14
+    console.log(challenge.charCodeAt(11));
+
+    // Bài 15
+    console.log(challenge.indexOf("a"));
+
+    // Bài 16
+    console.log(challenge.lastIndexOf("a"));
+
+    // Bài 17
+    let sen = "You cannot end a sentence with because because because is a conjunction"
+    console.log(sen.indexOf("because"));
+
+    // Bài 18
+    console.log(sen.lastIndexOf("because"));
+
+    // Bài 19
+    console.log(sen.search("because"));
+
+    // Bài 20 
+    const str1 = "  30 Days Of JavaScript.";
+    console.log(str1.trim());
+
+    // Bài 21
+    console.log(challenge.startsWith("30"));
+    console.log(challenge.startsWith("T"));
+
+    // Bài 22
+    console.log(challenge.endsWith("JavaScript"));
+
+    // Bài 23
+    console.log(challenge.match(/a/gi));
+
+    // Bài 24
+    let str2 = "30 Days of";
+    let str3 = " JavaScript";
+    const reults = str2.concat(str3);
+    console.log(reults);
+
+    // Bài 25
+    console.log(challenge.repeat(2));
+  </script>
+</body>
+</html>
