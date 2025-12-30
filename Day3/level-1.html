@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Bài 1
+    let firstName = "Nguyễn";
+    let lastName = "Trâm";
+    let country = "Việt Nam";
+    let city = "Phú Yên";
+    let age = 21;
+    let isMarried = false;
+    let year = 2025;
+    console.log(typeof firstName);
+    console.log(typeof lastName);
+    console.log(typeof country);
+    console.log(typeof city);
+    console.log(typeof age);
+    console.log(typeof isMarried);
+    console.log(typeof year);
+
+    // Bài 2
+    console.log("10" === 10);
+
+    // Bài 3
+    console.log(parseInt('9.8') === 10);
+
+    // Bài 4
+    Boolean(1);
+    Boolean("hello");
+    Boolean([]);
+    Boolean(0);
+    Boolean("");
+    Boolean(null);
+
+    // Bài 5
+    console.log(4 > 3);
+    console.log(4 >= 3);
+    console.log(4 < 3);
+    console.log(4 <= 3);
+    console.log(4 == 4);
+    console.log(4 === 4);
+    console.log(4 != 4);
+    console.log(4 !== '4');
+    console.log(4 == '4');
+    console.log(4 === '4');
+    let chuoi = 'python and jargon';
+    console.log(chuoi.length === '17');
+
+    // Bài 6
+    console.log(4 > 3 && 10 < 12);
+    console.log(4 > 3 && 10 > 12);
+    console.log(4 > 3 || 10 < 12);
+    console.log(4 > 3 || 10 > 12);
+    console.log(!(4 > 3 ))
+    console.log(!(4 < 3));
+    console.log(!(false));
+    console.log(!(4 > 3 && 10 < 12));
+    console.log(!(4 > 3 && 10 > 12));
+    console.log(!(4 === '4'));
+    console.log(!(chuoi.includes('on')));
+
+    // Bài 7
+    const now = new Date();
+    console.log("Year: ", now.getFullYear());
+    console.log("Month: ", now.getMonth() + 1);
+    console.log("Date: ", now.getDate());
+    console.log("Day: ", now.getDay());
+    console.log("Hours: ", now.getHours());
+    console.log("Minute: ", now.getMinutes());
+    console.log("Seconds since Jan 1, 1970: ", Math.floor(Date.now() / 1000));
+    
+
+  </script>
+</body>
+</html>
