@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const month = String(prompt("Enter a month: ")).toLowerCase()
+    const day31 = ["january", "march", "may", "july", "august", "october", "december"]
+    const day30 = ["april", "june", "september", "novenber"]
+    const day = ["february"]
+    if (day31.includes(month)) {
+      console.log(`${month} has 31 days.`)
+    } else if (day30.includes(month)) {
+      console.log(`${month} has 30 days.`)
+    } else {
+      console.log(`${month} has 28 days.`)
+    }
+
+  </script>
+</body>
+</html>
