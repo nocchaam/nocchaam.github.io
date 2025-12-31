@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 1
+    for (let i = 0; i<= 10; i++) {
+      console.log(i)
+    }
+
+    let i = 0
+    while(i <= 10) {
+      console.log(i)
+      i++
+    }
+
+    let n = 0
+    do {
+      console.log(n)
+      n++
+    } while(n <= 10)
+
+    // 2
+    for (let i = 10; i>=0; i--) {
+      console.log(i)
+    }
+
+    let x = 10
+    while(x >= 0) {
+      console.log(x)
+      x--
+    }
+
+    let y = 10
+    do {
+      console.log(y)
+      y--
+    } while(y >= 0)
+
+    // 3
+    let a = 7
+    for (let i = 0; i<=a; i++) {
+      console.log(i)
+    }
+
+    // 4
+    for (let i = 1; i<= 7; i++) {
+      let line = ""
+      for (let j= 1; j<= i; j++) {
+        line+= "#"
+      }
+      console.log(line)
+    }
+
+    // 5
+    for (let i= 0; i <= 10; i++) {
+      console.log(`${i} x ${i} = ${i * i}`)
+    }
+
+    // 6
+    console.log("i   i^2   i^3")
+    for (let i = 0; i<=10;i++) {
+      console.log(i + "   " + (i * i) + "   " + (i * i * i))
+    }
+
+    // 7
+    for (let i= 0; i<=100; i++) {
+      if (i % 2 === 0) {
+        console.log(i)
+      }
+    }
+
+    // 8
+    for (let i= 0; i<=100; i++) {
+      if (i % 2 !== 0) {
+        console.log(i)
+      }
+    }
+
+    // 9
+    for (let i= 0; i<= 100; i++) {
+      let isPrime = true
+      for (let j = 2; j<= Math.sqrt(i); j++) {
+        if (i % j == 0) {
+          isPrime = false
+          break
+        }
+      }
+      if(isPrime) {
+        console.log(i)
+      }
+    }
+
+    // 10
+    let sum = 0
+    for (let i = 0; i<=100; i++) {
+      sum += i
+    }
+    console.log(`The sum of all numbers from 0 to 100 is: ${sum}`)
+
+    // 11
+    let sumEven = 0
+    let sumOdd = 0
+    for (let i= 0; i<= 100; i++) {
+      if (i % 2 === 0) {
+        sumEven += i
+      } else {
+        sumOdd += i
+      }
+    }
+
+    console.log(`The sum of all evens from 0 to 100 is ${sumEven}. And the sum of all odds from 0 to 100 is ${sumOdd}.`)
+
+    // 12
+    console.log([sumEven, sumOdd])
+
+    // 13
+    let randomNumbers = []
+    for (let i= 0; i< 5; i++) {
+      let random = Math.floor(Math.random() * 101)
+      randomNumbers.push(random)
+    }
+    console.log(randomNumbers)
+
+    // 14
+    let numbers = []
+    for (let i = 0; numbers.length < 5; i++) {
+      let random = Math.floor(Math.random() * 101)
+      if (!numbers.includes(random)) {
+        numbers.push(random)
+      }
+    }
+    console.log(numbers)
+
+    // 15
+    let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    let randomId = "";
+    for (let i = 0; i < 6; i++) {
+        let randomIndex = Math.floor(Math.random() * chars.length);
+        randomId += chars[randomIndex];
+    }
+    console.log(randomId);
+
+  </script>
+</body>
+</html>

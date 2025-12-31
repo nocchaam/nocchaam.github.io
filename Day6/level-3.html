@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const countries = [
+      "ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA",
+      "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "ICELAND",
+      "JAPAN", "KENYA"
+    ];
+
+    let countriesCopy = [];
+
+    for (let i = 0; i < countries.length; i++) {
+      countriesCopy.push(countries[i]);
+    }
+
+    console.log(countriesCopy);
+
+    // 2
+    let countriesCopy1 = [];
+
+    for (let i = 0; i < countries.length; i++) {
+      countriesCopy1.push(countries[i]);
+    }
+    let sortedCountries = countriesCopy1.sort();
+
+    console.log(sortedCountries);
+
+    // 3
+    const webTechs = [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Redux",
+      "Node",
+      "MongoDB"
+    ];
+
+    const mernStack = ["MongoDB", "Express", "React", "Node"];
+    webTechs.sort();
+    mernStack.sort();
+
+    console.log(webTechs);
+    console.log(mernStack);
+
+    // 4
+    let landCountries = [];
+
+    for (let i = 0; i < countries.length; i++) {
+      if (countries[i].toLowerCase().includes("land")) {
+        landCountries.push(countries[i]);
+      }
+    }
+
+    console.log(landCountries);
+
+    // 5
+    let longestCountry = countries[0];
+
+    for (let i = 1; i < countries.length; i++) {
+      if (countries[i].length > longestCountry.length) {
+        longestCountry = countries[i];
+      }
+    }
+
+    console.log(longestCountry);
+
+    // 6
+    let landCountries1 = [];
+
+    for (let i = 0; i < countries.length; i++) {
+      if (countries[i].toLowerCase().includes("land")) {
+        landCountries1.push(countries[i]);
+      }
+    }
+
+    console.log(landCountries1);
+
+    // 7
+    let fourCharCountries = [];
+
+    for (let i = 0; i < countries.length; i++) {
+      if (countries[i].length === 4) {
+        fourCharCountries.push(countries[i]);
+      }
+    }
+
+    console.log(fourCharCountries);
+
+    // 8
+    let multiWordCountries = [];
+
+    for (let i = 0; i < countries.length; i++) {
+      if (countries[i].includes(" ")) {
+        multiWordCountries.push(countries[i]);
+      }
+    }
+
+    console.log(multiWordCountries);
+
+    // 9
+    let reversedCapitalizedCountries = [];
+
+    for (let i = countries.length - 1; i >= 0; i--) {
+      reversedCapitalizedCountries.push(countries[i].toUpperCase());
+    }
+
+    console.log(reversedCapitalizedCountries);
+
+
+
+
+  </script>
+</body>
+</html>
