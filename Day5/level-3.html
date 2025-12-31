@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 1
+    const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+    ages.sort((a, b) => a - b)
+    console.log(ages)
+    console.log(ages[0])
+    console.log(ages[ages.length - 1])
+
+    let mid = Math.floor(ages.length / 2)
+    console.log(ages[mid])
+
+    let sum = 0
+    for (let i of ages) {
+      sum +=i 
+    }
+    let average = sum/ ages.length
+    console.log(average)
+
+    let min = ages[0]
+    let max = ages[ages.length - 1]
+    let range = max - min
+    console.log(range)
+
+    let minDiff = Math.abs(min - average)
+    let maxDiff = Math.abs(max - average)
+    console.log(minDiff)
+    console.log(maxDiff)
+
+    // 1
+    const countries = [
+      "Albania", "Bolivia", "Canada", "Denmark", "Ethiopia",
+      "Finland", "Germany", "Hungary", "Ireland", "Japan",
+      "Kenya", "Latvia", "Mexico"
+    ];
+    console.log(countries.slice(0, 10))
+
+    // 2
+    let middleCountries;
+    let midIndex = Math.floor(countries.length / 2);
+
+    if (countries.length % 2 === 0) {
+      middleCountries = countries.slice(midIndex - 1, midIndex + 1);
+    } else {
+      middleCountries = countries.slice(midIndex, midIndex + 1);
+    }
+
+    console.log("Middle country(ies):", middleCountries);
+    
+
+    // 3
+    let firstHalf, secondHalf;
+
+    if (countries.length % 2 === 0) {
+      firstHalf = countries.slice(0, countries.length / 2);
+      secondHalf = countries.slice(countries.length / 2);
+    } else {
+      firstHalf = countries.slice(0, Math.ceil(countries.length / 2));
+      secondHalf = countries.slice(Math.ceil(countries.length / 2));
+    }
+
+    console.log("First half:", firstHalf);
+    console.log("Second half:", secondHalf);
+
+
+  </script>
+</body>
+</html>
